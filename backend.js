@@ -33,13 +33,13 @@ if (clientId && redirectUri && state) {
 
       const data = await response.json();
       const data_string = JSON.parse(data.body);
-      if (response.ok) {
-        console.log(data);
-        console.log(data.body);
-        console.log(data_string.authorizationCode);
+      if (response.ok && data_string) {
+        //console.log(data);
+        //console.log(data.body);
+        //console.log(data_string.authorizationCode);
         //console.log(data_string);
         //console.log(data_string.authorizationCod);
-       // window.location.href = `${redirectUri}?code=${encodeURIComponent(data.code)}&state=${encodeURIComponent(state)}`;
+       window.location.href = `${redirectUri}?code=${encodeURIComponent(data.code)}&state=${encodeURIComponent(state)}`;
       } else {
         alert("Login failed or no code returned.");
       }
