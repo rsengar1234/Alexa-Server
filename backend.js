@@ -31,6 +31,7 @@
     const data = await response.json();
 
     if (response.ok && data.code) {
+      console.log(data);
       // Redirect back to Alexa with the auth code and state
       window.location.href = `${redirectUri}?code=${data.code}&state=${state}`;
     } else {
