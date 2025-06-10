@@ -34,7 +34,7 @@ if (clientId && redirectUri && state) {
       const data = await response.json();
       //const data_string = JSON.parse(data);
       if (response.ok) {
-        console.log(data);
+        console.log(data.authorizationCode);
         //console.log(data_string);
         //console.log(data_string.authorizationCod);
        // window.location.href = `${redirectUri}?code=${encodeURIComponent(data.code)}&state=${encodeURIComponent(state)}`;
