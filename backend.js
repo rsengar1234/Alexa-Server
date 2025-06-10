@@ -36,6 +36,7 @@ if (clientId && redirectUri && state) {
       if (response.ok) {
         console.log(data);
         console.log(data.body);
+        console.log(data.body.authorizationCode);
         //console.log(data_string);
         //console.log(data_string.authorizationCod);
        // window.location.href = `${redirectUri}?code=${encodeURIComponent(data.code)}&state=${encodeURIComponent(state)}`;
