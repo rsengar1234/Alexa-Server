@@ -12,6 +12,13 @@
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
 
+
+      // Debug Purpose
+      console.log(redirectUri);
+      console.log(state);
+      if(!redirectUri){
+        console.log("No Redirect URI");
+      };
       // TODO: Validate credentials (locally or call backend)
 
   try {
