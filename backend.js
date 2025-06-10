@@ -24,8 +24,8 @@ if (clientId && redirectUri && state) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          email,
-          password,
+          user_email : email,
+          pass_word : password ,
           redirect_uri: redirectUri, // use underscore
           state
         }),
@@ -33,7 +33,7 @@ if (clientId && redirectUri && state) {
 
       const data = await response.json();
       //const data_string = JSON.parse(data);
-      if (response.ok) {
+      if (response.ok && data.authorizationCode) {
         console.log(data);
         //console.log(data_string);
         //console.log(data_string.authorizationCode);
