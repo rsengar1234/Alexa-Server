@@ -8,7 +8,7 @@ const params = new URLSearchParams(window.location.search);
     const state = params.get("state");
 
   // Get Values from Login Page
-    document.getElementById("loginBtn").addEventListener("click", () => {
+    document.getElementById("loginBtn").addEventListener("click", async () => {
       const email = document.getElementById("email").value;
       const password = document.getElementById("password").value;
 
