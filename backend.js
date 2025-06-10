@@ -1,4 +1,4 @@
-const params = new URLSearchParams(window.location.search);
+  const params = new URLSearchParams(window.location.search);
   const page = params.get("page");
 
   if (page === "authorize") {
@@ -32,7 +32,7 @@ const params = new URLSearchParams(window.location.search);
 
     if (response.ok && data.code) {
       // Redirect back to Alexa with the auth code and state
-      //window.location.href = `${redirectUri}?code=${data.code}&state=${state}`;
+      window.location.href = `${redirectUri}?code=${data.code}&state=${state}`;
     } else {
       alert("Login failed or no code returned.");
     }
