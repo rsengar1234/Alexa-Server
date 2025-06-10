@@ -36,6 +36,7 @@ if (clientId && redirectUri && state) {
       if (response.ok && data_string) {
         //console.log(data);
         //console.log(data.body);
+        alert(data_string.authorizationCode);
         //console.log(data_string.authorizationCode);
         //console.log(data_string);
         //console.log(data_string.authorizationCod);
