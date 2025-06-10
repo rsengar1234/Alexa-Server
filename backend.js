@@ -33,7 +33,7 @@ if (clientId && redirectUri && state) {
 
       const data = await response.json();
 
-      if (response.ok && data.code) {
+      if (response.ok) {
         window.location.href = `${redirectUri}?code=${encodeURIComponent(data.code)}&state=${encodeURIComponent(state)}`;
       } else {
         alert("Login failed or no code returned.");
