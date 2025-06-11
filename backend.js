@@ -36,11 +36,11 @@ if (clientId && redirectUri && state) {
       if (response.ok && data_string) {
         //console.log(data);
         //console.log(data.body);
-        alert(data_string.authorizationCode);
+        //alert(data_string.authorizationCode);
         //console.log(data_string.authorizationCode);
         //console.log(data_string);
         //console.log(data_string.authorizationCod);
-       window.location.href = `${redirectUri}?code=${encodeURIComponent(data.code)}&state=${encodeURIComponent(state)}`;
+       window.location.href = `${redirectUri}?code=${encodeURIComponent(data_string.code)}&state=${encodeURIComponent(state)}`;
       } else {
         alert("Login failed or no code returned.");
       }
