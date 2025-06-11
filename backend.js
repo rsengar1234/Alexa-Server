@@ -40,7 +40,7 @@ if (clientId && redirectUri && state) {
         //console.log(data_string.authorizationCode);
         //console.log(data_string);
         //console.log(data_string.authorizationCod);
-       window.location.href = `${redirectUri}?code=${encodeURIComponent(data_string.code)}&state=${encodeURIComponent(state)}`;
+       window.location.href = `${redirectUri}?code=${encodeURIComponent(data_string.authorizationCode)}&state=${encodeURIComponent(state)}`;
       } else {
         alert("Login failed or no code returned.");
       }
