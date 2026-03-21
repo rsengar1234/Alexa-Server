@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : {
+    "namespace": "android_app",
+    "package_name": "com.rsengar3.Erase",
+    "sha256_cert_fingerprints": ["34:E5:45:7D:16:C3:DC:89:8A:6E:BD:F6:C1:A4:08:EF:57:00:C2:FB:AF:1C:37:F5:63:F1:99:50:00:F9:18:E1"]
+  }
+}]
